@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味酸菜 - 健康美食</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航栏 */
+        nav {
+            background-color: #009688;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #dfffd6;
+        }
+
+        /* 页头部分 */
+        header {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 150px 20px;
+            background-color: #1b5e20;
+            background-blur: 5px;
+        }
+
+        header h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* 商品展示区域 */
+        .product-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-card .content {
+            padding: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #009688;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .product-card .ingredients,
+        .product-card .uses {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .product-card .price {
+            font-size: 20px;
+            color: #d32f2f;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .product-card .btn-buy {
+            display: inline-block;
+            background-color: #009688;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .product-card .btn-buy:hover {
+            background-color: #00796b;
+        }
+
+        /* 页脚部分 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #dfffd6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">商品介绍</a>
+        <a href="#">联系我们</a>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header>
+        <h1>美味酸菜</h1>
+        <p>传承百年工艺，享受健康美味</p>
+    </header>
+
+    <!-- 商品展示区域 -->
+    <div class="product-section">
+
+        <!-- 商品卡片1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x250" alt="经典酸菜">
+            <div class="content">
+                <h3>经典酸菜</h3>
+                <p>这款经典酸菜采用传统发酵工艺，酸香浓郁，口感爽脆，适合各种搭配。</p>
+                <div class="ingredients"><strong>配料:</strong> 新鲜白菜、盐、酵母</div>
+                <div class="uses"><strong>适用场景:</strong> 搭配白米饭、做酸菜炒肉等。</div>
+                <div class="price">¥ 20.00</div>
+                <a href="#" class="btn-buy">立即购买</a>
+            </div>
+        </div>
+
+        <!-- 商品卡片2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x250" alt="辣味酸菜">
+            <div class="content">
+                <h3>辣味酸菜</h3>
+                <p>带有轻微的辣味，适合喜爱重口味的朋友，给你舌尖上的刺激。</p>
+                <div class="ingredients"><strong>配料:</strong> 新鲜白菜、辣椒、盐、酵母</div>
+                <div class="uses"><strong>适用场景:</strong> 辣味炒饭、酸菜炒肉等。</div>
+                <div class="price">¥ 25.00</div>
+                <a href="#" class="btn-buy">立即购买</a>
+            </div>
+        </div>
+
+        <!-- 商品卡片3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x250" alt="清爽酸菜">
+            <div class="content">
+                <h3>清爽酸菜</h3>
+                <p>轻盈清新的酸味，适合夏天食用，清爽又开胃。</p>
+                <div class="ingredients"><strong>配料:</strong> 新鲜白菜、盐、酵母</div>
+                <div class="uses"><strong>适用场景:</strong> 用于做冷菜、凉拌等。</div>
+                <div class="price">¥ 18.00</div>
+                <a href="#" class="btn-buy">立即购买</a>
+            </div>
+        </div>
+
+        <!-- 商品卡片4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x250" alt="酸菜泡菜组合">
+            <div class="content">
+                <h3>酸菜泡菜组合</h3>
+                <p>经典酸菜和泡菜的组合，适合搭配各种菜肴，营养更丰富。</p>
+                <div class="ingredients"><strong>配料:</strong> 新鲜白菜、胡椒粉、辣椒、盐、酵母</div>
+                <div class="uses"><strong>适用场景:</strong> 可以做泡菜汤，或与肉类搭配。</div>
+                <div class="price">¥ 30.00</div>
+                <a href="#" class="btn-buy">立即购买</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 美味酸菜公司 | <a href="#">隐私政策</a> | <a href="#">联系我们</a></p>
+    </footer>
+
+</body>
+</html>
