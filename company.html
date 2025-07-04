@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酸菜公司简介</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and basic font settings */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container to center content */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2d3a3f;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: #2d3a3f;
+            font-size: 1.1rem;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fa6b6b;
+        }
+
+        /* Introduction Section */
+        .intro {
+            background-color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2d3a3f;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Partners Section */
+        .partners {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .partners h2 {
+            font-size: 2.5rem;
+            color: #2d3a3f;
+            margin-bottom: 20px;
+        }
+
+        .partners ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .partners li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .partners li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .partners img {
+            width: 60px; /* Adjust image width */
+            height: 60px;
+            margin-right: 15px; /* Space between image and text */
+            border-radius: 50%; /* Round image */
+        }
+
+        .partners span {
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2d3a3f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>中山酸菜公司</h1>
+            <p>十年老牌，品质保障</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html">首页</a>
+            <a href="company.html">商品介绍</a>
+            <a href="#">联系我们</a>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <h2>关于我们</h2>
+            <p>
+                我们是一家位于中国中山的酸菜生产公司，已有10年的历史。致力于为消费者提供优质的酸菜产品，秉承传统工艺与创新结合的理念，保证每一口酸菜都充满自然的美味和营养。
+            </p>
+            <p>
+                我们的产品深受各大品牌和消费者喜爱，已经与多家知名品牌建立了长期稳定的合作关系。
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2>合作品牌</h2>
+            <p>我们与多家知名品牌建立了长期合作伙伴关系：</p>
+            <ul>
+                <li>
+                    <img src="/image/fish.png" alt="太二酸菜鱼 Logo">
+                    <span>太二酸菜鱼</span>
+                </li>
+                <li>
+                    <img src="/image/fish.png" alt="品牌B Logo">
+                    <span>品牌B</span>
+                </li>
+                <li>
+                    <img src="/image/fish.png" alt="品牌C Logo">
+                    <span>品牌C</span>
+                </li>
+                <li>
+                    <img src="/image/fish.png" alt="品牌D Logo">
+                    <span>品牌D</span>
+                </li>
+                <li>
+                    <img src="/image/fish.png" alt="品牌E Logo">
+                    <span>品牌E</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 中山酸菜公司. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html>
